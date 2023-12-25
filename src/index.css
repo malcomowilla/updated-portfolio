@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300;400;500&family=Indie+Flower&family=Nanum+Myeongjo&family=Shadows+Into+Light&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+
+
+@layer base{
+  
+
+    *{
+        @apply box-border
+    }
+
+    body{
+        /* @apply bg-black */
+    }
+
+}
+
+@layer components{
+    .fonts{
+        font-family: 'Caveat', cursive;
+        font-family: 'Comfortaa', sans-serif;
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Shadows Into Light', cursive;
+    }
+
+
+
+    
+}
+@tailwind utilities;
+
+
+
+.about{
+    color: white;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    
+
+}
+
+
+
+
