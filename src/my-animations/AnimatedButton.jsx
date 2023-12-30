@@ -3,7 +3,7 @@ const AnimatedButton = () => {
 
     const navigate = useNavigate()
   return (
-    <div className="grid min-h-[200px] place-content-center lg:text-[50px] max-sm:text-[20px] p-4">
+    <div className="grid min-h-[200px] place-content-center lg:text-[50px] text-[40px] p-4 ">
       <DrawOutlineButton  onClick={() => window.location.href = 'mailto:malcomowilla@gmail.com'}   >malcomowilla@gmail.com</DrawOutlineButton>
     </div>
   );

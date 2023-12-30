@@ -5,7 +5,7 @@ import ShuffleHero from '../my-animations/ShuffleHero'
 
 const Projects = () => {
   return (
-    <div>
+    <div className='flex justify-center items-center p-[100px] mt-[100px]'>
             <AnimateComponents>
 
                 {/* <Progress /> */}

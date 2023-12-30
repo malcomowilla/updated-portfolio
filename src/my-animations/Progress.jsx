@@ -35,8 +35,8 @@ export default function Progress() {
       activeStep={activeStep}
       sx={{ maxWidth: 10000, flexGrow: 1 }}
       nextButton={
-        <Button size="small" onClick={handleNext} disabled={activeStep === 5}>
-          Next
+        <Button  onClick={handleNext} disabled={activeStep === 5}>
+          <p className='sm:text-[40px]'>Next</p>
           {theme.direction === 'rtl' ? (
             <KeyboardArrowLeft />
           ) : (
@@ -45,13 +45,13 @@ export default function Progress() {
         </Button>
       }
       backButton={
-        <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+        <Button  onClick={handleBack} disabled={activeStep === 0}  className=''>
           {theme.direction === 'rtl' ? (
             <KeyboardArrowRight />
           ) : (
             <KeyboardArrowLeft />
           )}
-          Back
+          <p className='sm:text-[40px]'>Back</p>
         </Button>
       }
     />

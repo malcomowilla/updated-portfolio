@@ -10,21 +10,23 @@ const Animate = ({children}) => {
     <motion.div ref={ref}
     variants={{
         hidden: {
-            opacity: 0,
-            y: 75
+            // opacity: 0,
+            y: 700,
         },
 
         visible: {
-            opacity: 1,
-            y: 0
+            // opacity: 1,
+            y: 0,
         }
     }}
 
     transition={{
-        duration: 4,
+        duration: 2,
         delay: 0.25,
         type: 'spring',
-        stiffness: 100
+        stiffness: 100,
+        ease: 'easeIn'
+
     }}
     
     initial='hidden'

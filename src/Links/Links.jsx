@@ -11,11 +11,11 @@ export const Links = () => {
 
   
   return (
-
-    <section className={`bg-white
+    <Animate>
+    <section className={`bg-black
       p-4 md:p-8
-       max-sm:bg-[url('../images/image_portfolio3.jpg')] bg-scroll bg-center max-sm:bg-cover 
-        h-screen`}>
+       sm:bg-[url('../images/image_portfolio3.jpg')]  bg-scroll bg-center max-sm:bg-cover 
+        h-screen max-sm:bg-[url('../images/image_portfolio3.jpg')]`}>
 
 
     <div className='fixed right-0 hidden md:flex md:gap-20' >
@@ -71,6 +71,8 @@ export const Links = () => {
 
 
     </section>
+    </Animate>
+
 
 
   );
@@ -108,7 +110,6 @@ const Link = ({ heading, imgSrc, subheading, href, to }) => {
   return (
     <>
 
-    <Animate>
     <motion.a
       ref={ref}
       onMouseMove={handleMouseMove}
@@ -186,7 +187,6 @@ const Link = ({ heading, imgSrc, subheading, href, to }) => {
         <FiArrowRight className="text-5xl text-black" />
       </motion.div>
     </motion.a>
-    </Animate>
     </>
   );
 };

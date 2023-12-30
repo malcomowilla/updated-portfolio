@@ -12,22 +12,25 @@ const AnimateComponents = ({children}) =>  {
 
     
     initial={{
-        opacity: 0,
-        scale: 0
+        // opacity: 0,
+        // scale: 0
+        y: 300
     }} 
     animate={{
-        opacity: 1,
-        scale: 1
+        // opacity: 1,
+        // scale: 1
+
+        y:5
     }}
 
     exit={{
-        opacity: 0,
-        scale: 0
+        opacity: 1,
+        // scale: 0
     }}
     
     transition={{
-        duration: 0.4,
-        ease: 'easeOut',
+        duration: 0.75,
+        ease: 'easeIn',
         type: 'spring',
         stiffness: 100
     }}

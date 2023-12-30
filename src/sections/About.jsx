@@ -6,8 +6,11 @@ import AnimateComponents from '../my-animations/AnimateComponents'
 
 const About = () => {
   return (
+
     <div
-    className='w-screen h-[1200px]  flex justify-center bg-black '>
+    className='w-full h-full
+    flex justify-center items-center bg-black p-[80px]
+      '>
             <AnimateComponents >
 
 <h2 className='

@@ -18,7 +18,7 @@ const location = useLocation()
 
   const fetchData = async () => {
     // Assuming the operation takes 2 seconds
-    await fetch(resolve => setTimeout(resolve, 3000));
+    await fetch(resolve => setTimeout(resolve, 1000));
     setloading(false); // Set loading to false when data is fetched
   };
 
@@ -34,8 +34,11 @@ const location = useLocation()
 {/* <Animate> */}
 <AnimatePresence initial={false} >
    <div className='flex justify-center'>
+<div className=' p-[10px]'>
 
-        <Progress/>
+<Progress/>
+
+</div>
         
 
         </div>

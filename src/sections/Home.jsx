@@ -22,17 +22,14 @@ const Home = () => {
   return (
 
     <>
-    <AnimateComponents>
     <div  
     
-    className='h-full w-screen bg-black  '>
-        <div className='flex justify-center'>
+    className=' 
+    w-full h-full bg-black p-[80px] flex justify-center items-center '>
+          <AnimateComponents>
 
-        {/* <Progress /> */}
-
-        </div>
 <p className='text-white lg:text-[100px] font-bold mt-10
- max-sm:text-[60px]'>
+ text-[70px] '>
 Hi 👋🏻 i'm Malcom Owilla I,FULLSTACK  DEVELOPER WITH <span 
 className='bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-clip-text text-transparent' >REACT</span>   AND
 
@@ -40,12 +37,12 @@ className='bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-clip-text text
 
 <div className='   flex justify-center'>
 
-    <p className='text-white lg:text-[100px] font-extrabold mt-[180px]   sm:text-[30px]'>TECHNOLOGIES I USE </p>
+    <p className='text-white lg:text-[100px] font-extrabold mt-[180px]   text-[50px]'>TECHNOLOGIES I USE </p>
 
 </div>
 
 
-<div className='w-full h-full grid grid-auto-fit ml-20'>
+<div className='w-full h-full grid grid-auto-fit ml-20 text-[30px]'>
     <div>
     <img src={myReact} alt="reactjs" className='lg:w-[100px] sm:w-[70px]'/>
 <h2 className='text-white lg:text-[30px] max-sm:text-[20px]'>React</h2>
@@ -111,10 +108,10 @@ max-sm:w-[60px] max-sm:h-[60px] max-md:w-[90px]' />
     <h2 className='text-white lg:text-[30px] max-sm:text-[20px]'>ruby on rails</h2>
 
     </div>
+    </AnimateComponents>
 
 
     </div>
-    </AnimateComponents>
     </>
   )
 }

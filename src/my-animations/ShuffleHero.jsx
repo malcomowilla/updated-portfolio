@@ -12,12 +12,13 @@ const ShuffleHero = () => {
         Let's Connect:
 
         </h3>
-        <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
+        <p className=" text-[40px] text-slate-700 my-4 md:my-6">
         I am always eager to connect with fellow developers, tech enthusiasts,
          and potential collaborators. Whether you have an exciting project, 
          or just want to chat about the latest in tech, feel free to reach out!
         </p>
-        <button  onClick={()=> navigate('/contact-me')}  className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
+        <button  onClick={()=> navigate('/contact-me')}  className="bg-indigo-500 text-white
+         font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95 text-[30px]">
           Contact Me
         </button>
       </div>
@@ -117,7 +118,7 @@ const generateSquares = () => {
       key={sq.id}
       layout
       transition={{ duration: 1.5, type: "spring" }}
-      className="lg:w-[800px] lg: h-[550px]"
+      className="lg:w-[800px] lg:h-[550px]  h-[300px] w-[450px]"
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
