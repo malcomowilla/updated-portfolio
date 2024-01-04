@@ -14,13 +14,13 @@ const AnimateComponents = ({children}) =>  {
     initial={{
         // opacity: 0,
         // scale: 0
-        y: 300
+        y: 600
     }} 
     animate={{
         // opacity: 1,
         // scale: 1
 
-        y:5
+        y:0
     }}
 
     exit={{
@@ -29,7 +29,7 @@ const AnimateComponents = ({children}) =>  {
     }}
     
     transition={{
-        duration: 0.75,
+        duration: 2.5,
         ease: 'easeIn',
         type: 'spring',
         stiffness: 100

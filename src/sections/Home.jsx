@@ -22,15 +22,17 @@ const Home = () => {
   return (
 
     <>
+
     <div  
-    
+
     className=' 
     w-full h-full bg-black p-[80px] flex justify-center items-center '>
-          <AnimateComponents>
+                        <AnimateComponents>
+
 
 <p className='text-white lg:text-[100px] font-bold mt-10
  text-[70px] '>
-Hi 👋🏻 i'm Malcom Owilla I,FULLSTACK  DEVELOPER WITH <span 
+Hi 👋🏻 I'M MALCOM OWILLA,FULLSTACK  DEVELOPER WITH <span 
 className='bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-clip-text text-transparent' >REACT</span>   AND
 
  <span className='bg-gradient-to-r from-purple-500 to-pink-500 bg-cover bg-clip-text text-transparent'>    RUBY ON RAILS </span>, i MAKE WEB APPLICATIONS</p>

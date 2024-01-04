@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, Link} from 'react-router-dom'
+import arrow from '/images/arrow.png'
 
 const ShuffleHero = () => {
   const navigate = useNavigate()
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl ">
+    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl  mix-blend-overlay">
       <div>
        
         <h3 className="text-4xl md:text-6xl font-semibold">
@@ -48,22 +49,44 @@ const squareData = [
   {
     id: 1,
     src: "/images/project_image1.png",
+    name: "Github Repo Viewer",
+    Links: 'https://chat-application-edfamjipt-malcomowilla-gmailcom.vercel.app/',
+    title: 'simpleChatApp',
+    githubLink: 'https://github.com/malcomowilla/mySimpleChatApp'
+
   },
   {
     id: 2,
     src: "/images/project_image2.png",
+    title: 'Movies',
+    Links: 'https://movies-z936.onrender.com/',
+    githubLink: 'https://github.com/malcomowilla/my-movies'
+
   },
   {
     id: 3,
     src: "/images/projectimage3.png",
+    title: 'Captive-Portal',
+    Links: 'https://captive-portal.onrender.com/',
+    githubLink: 'https://github.com/malcomowilla/captive-portal'
   },
   {
     id: 4,
     src: "/images/project_image4.png",
+    title: 'Niky',
+    Links: 'https://niky.onrender.com/',
+    githubLink: 'https://github.com/malcomowilla/NIky-Landing-Page'
+    
+
+
   },
   {
     id: 5,
     src: "/images/project_image5.png",
+    title: 'Meme-Lord',
+    Links: 'https://lordofmeme.netlify.app/',
+    githubLink: 'https://github.com/malcomowilla/meme-lord'
+
   },
   // {
   //   id: 6,
@@ -112,20 +135,54 @@ const squareData = [
 ];
 
 const generateSquares = () => {
-  return shuffle(squareData).map((sq) => (
+  return (
+  shuffle(squareData).map((sq) => (
+   
+    
+<>
     <motion.div
 
       key={sq.id}
       layout
-      transition={{ duration: 1.5, type: "spring" }}
-      className="lg:w-[800px] lg:h-[550px]  h-[300px] w-[450px]"
+      transition={{ duration: 4, type: "spring" }}
+      className="lg:w-[800px]
+        lg:h-[550px] 
+         h-[300px] w-[450px]  overflow-hidden
+             "
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
        
       }}
-    ></motion.div>
-  ));
+    >
+
+<div key={sq.id} className='
+w-full h-full mt-10 bg-black  bg-opacity-5  hover:bg-opacity-80  flex  justify-center  '>
+<p       className='hover:text-white  lg:text-6xl  md:text-4xl sm:text-2xl text-transparent hover:underline  mt-[80px]'> 
+ <Link key={sq.id} to={sq.Links}>{sq.title}</Link>   </p>
+{/* <p className='   lg:text-6xl  sm:text-sm
+   text-transparent hover:underline mt-[40px] lg:hover:text-white'><Link  key={sq.id} to={sq.githubLink}>For More Details</Link></p> */
+   }
+
+
+<Link key={sq.id} to={sq.githubLink}>
+<div key={sq.id} className='  bg-blue-400 rounded-full h-fit w-[100px] flex justify-center items-center '>
+<img src={arrow} alt=""  className='w-[60px] h-[60px]'/>
+ <p className='lg:hover:text-white text-xl  md:text-sm  sm:text-xl '>For more details</p>
+</div>
+
+</Link>
+
+    </div>
+
+ 
+
+    </motion.div>
+   
+
+    </>
+
+  )));
 };
 
 const ShuffleGrid = () => {

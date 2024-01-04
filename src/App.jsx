@@ -8,13 +8,13 @@ import {Links} from '../src/Links/Links'
 import  Education from './sections/Education'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import Animate from '../src/my-animations/Animate'
+// import Animate from '../src/my-animations/Animate'
 import Progress from './my-animations/Progress'
 import {AnimatePresence} from 'framer-motion'
 
 const App = () => {
 const [loading, setloading] = useState(true);
-const location = useLocation()
+// const location = useLocation()
 
   const fetchData = async () => {
     // Assuming the operation takes 2 seconds
@@ -32,13 +32,11 @@ const location = useLocation()
 
 `} >
 {/* <Animate> */}
-<AnimatePresence initial={false} >
+<AnimatePresence initial={false}  >
    <div className='flex justify-center'>
-<div className=' p-[10px]'>
 
-<Progress/>
+<Progress />
 
-</div>
         
 
         </div>
