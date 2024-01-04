@@ -11,7 +11,7 @@ const Animate = ({children}) => {
     variants={{
         hidden: {
             // opacity: 0,
-            y: 700,
+            y: -700,
         },
 
         visible: {
@@ -21,10 +21,9 @@ const Animate = ({children}) => {
     }}
 
     transition={{
-        duration: 2,
-        delay: 0.25,
+        duration: 7,
         type: 'spring',
-        stiffness: 100,
+        stiffness: 50,
         ease: 'easeIn'
 
     }}

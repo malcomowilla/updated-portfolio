@@ -10,9 +10,9 @@ const About = () => {
     <div
     className='w-full h-full
     flex justify-center items-center bg-black p-[80px]
-      '>
+       '>
             <AnimateComponents >
-
+<div className='overflow-hidden'>
 <h2 className='
 font-extrabold text-[70px] tracking-[10px]
 about flex justify-center '>ABOUT ME</h2>
@@ -27,7 +27,7 @@ I specialize in frontend development, combining
 creativity and technical skills to build engaging user interfaces. My proficiency in React allows 
 me to create dynamic and responsive experiences, while my knowledge of Ruby on Rails empowers me to handle the backend seamlessly.
 </p>
-
+</div>
 
 </AnimateComponents >
     </div>

@@ -14,7 +14,7 @@ const AnimateComponents = ({children}) =>  {
     initial={{
         // opacity: 0,
         // scale: 0
-        y: 600
+        y: -800
     }} 
     animate={{
         // opacity: 1,
@@ -29,10 +29,10 @@ const AnimateComponents = ({children}) =>  {
     }}
     
     transition={{
-        duration: 2.5,
+        duration: 7,
         ease: 'easeIn',
         type: 'spring',
-        stiffness: 100
+        stiffness: 50
     }}
     >
 
